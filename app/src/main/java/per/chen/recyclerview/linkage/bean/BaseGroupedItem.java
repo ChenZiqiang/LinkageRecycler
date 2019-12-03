@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.bean;
+package per.chen.recyclerview.linkage.bean;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *

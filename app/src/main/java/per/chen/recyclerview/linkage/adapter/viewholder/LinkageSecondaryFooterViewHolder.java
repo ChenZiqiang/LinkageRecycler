@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.adapter.viewholder;
+package per.chen.recyclerview.linkage.adapter.viewholder;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -20,13 +20,13 @@ import android.support.annotation.NonNull;
 import android.view.View;
 
 
+
 /**
  * Create by KunMinX at 19/5/15
  */
-public class LinkageSecondaryHeaderViewHolder extends BaseViewHolder {
+public class LinkageSecondaryFooterViewHolder extends BaseViewHolder {
 
-    public LinkageSecondaryHeaderViewHolder(@NonNull View itemView) {
+    public LinkageSecondaryFooterViewHolder(@NonNull View itemView) {
         super(itemView);
     }
-
 }

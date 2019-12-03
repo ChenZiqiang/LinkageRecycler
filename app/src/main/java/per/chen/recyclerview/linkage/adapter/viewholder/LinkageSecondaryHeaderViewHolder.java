@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.adapter.viewholder;
+package per.chen.recyclerview.linkage.adapter.viewholder;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -17,30 +17,16 @@ package per.chen.listrecyclerlinkageview.linkage.adapter.viewholder;
 
 
 import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
-import android.util.SparseArray;
 import android.view.View;
 
 
 /**
  * Create by KunMinX at 19/5/15
  */
-public class BaseViewHolder extends RecyclerView.ViewHolder {
+public class LinkageSecondaryHeaderViewHolder extends BaseViewHolder {
 
-    private SparseArray<View> mHeaderViews = new SparseArray<>();
-    private View mConvertView;
-
-    public BaseViewHolder(@NonNull View itemView) {
+    public LinkageSecondaryHeaderViewHolder(@NonNull View itemView) {
         super(itemView);
-        mConvertView = itemView;
     }
 
-    public <T extends View> T getView(int viewId) {
-        View view = mHeaderViews.get(viewId);
-        if (view == null) {
-            view = mConvertView.findViewById(viewId);
-            mHeaderViews.put(viewId, view);
-        }
-        return (T) view;
-    }
 }

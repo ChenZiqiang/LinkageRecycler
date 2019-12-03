@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.adapter.viewholder;
+package per.chen.recyclerview.linkage.adapter.viewholder;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -19,23 +19,13 @@ package per.chen.listrecyclerlinkageview.linkage.adapter.viewholder;
 import android.support.annotation.NonNull;
 import android.view.View;
 
-import per.chen.listrecyclerlinkageview.linkage.contract.ILinkagePrimaryAdapterConfig;
-
 
 /**
  * Create by KunMinX at 19/5/15
  */
-public class LinkagePrimaryViewHolder extends BaseViewHolder {
+public class LinkageSecondaryViewHolder extends BaseViewHolder {
 
-    public View mGroupTitle;
-    public View mLayout;
-    private ILinkagePrimaryAdapterConfig mConfig;
-
-    public LinkagePrimaryViewHolder(@NonNull View itemView, ILinkagePrimaryAdapterConfig config) {
+    public LinkageSecondaryViewHolder(@NonNull View itemView) {
         super(itemView);
-        mConfig = config;
-        mGroupTitle = itemView.findViewById(mConfig.getGroupTitleViewId());
-        //need bind root layout by users, because rootLayout may not viewGroup, which can not getChild(0).
-        mLayout = itemView.findViewById(mConfig.getRootViewId());
     }
 }

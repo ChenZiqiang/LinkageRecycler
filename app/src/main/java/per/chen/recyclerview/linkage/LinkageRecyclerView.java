@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage;
+package per.chen.recyclerview.linkage;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -37,17 +37,17 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import per.chen.listrecyclerlinkageview.R;
-import per.chen.listrecyclerlinkageview.linkage.adapter.LinkagePrimaryAdapter;
-import per.chen.listrecyclerlinkageview.linkage.adapter.LinkageSecondaryAdapter;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.bean.BaseGroupedItem;
-import per.chen.listrecyclerlinkageview.linkage.bean.DefaultGroupedItem;
-import per.chen.listrecyclerlinkageview.linkage.contract.ILinkagePrimaryAdapterConfig;
-import per.chen.listrecyclerlinkageview.linkage.contract.ILinkageSecondaryAdapterConfig;
-import per.chen.listrecyclerlinkageview.linkage.defaults.DefaultLinkagePrimaryAdapterConfig;
-import per.chen.listrecyclerlinkageview.linkage.defaults.DefaultLinkageSecondaryAdapterConfig;
-import per.chen.listrecyclerlinkageview.linkage.manager.RecyclerViewScrollHelper;
+import per.chen.recyclerview.R;
+import per.chen.recyclerview.linkage.adapter.LinkagePrimaryAdapter;
+import per.chen.recyclerview.linkage.adapter.LinkageSecondaryAdapter;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
+import per.chen.recyclerview.linkage.bean.BaseGroupedItem;
+import per.chen.recyclerview.linkage.bean.DefaultGroupedItem;
+import per.chen.recyclerview.linkage.contract.ILinkagePrimaryAdapterConfig;
+import per.chen.recyclerview.linkage.contract.ILinkageSecondaryAdapterConfig;
+import per.chen.recyclerview.linkage.defaults.DefaultLinkagePrimaryAdapterConfig;
+import per.chen.recyclerview.linkage.defaults.DefaultLinkageSecondaryAdapterConfig;
+import per.chen.recyclerview.linkage.manager.RecyclerViewScrollHelper;
 
 /**
  * Create by KunMinX at 19/4/27

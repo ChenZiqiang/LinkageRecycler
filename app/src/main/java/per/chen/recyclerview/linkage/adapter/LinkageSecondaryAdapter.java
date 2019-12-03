@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.adapter;
+package per.chen.recyclerview.linkage.adapter;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -28,12 +28,12 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import per.chen.listrecyclerlinkageview.R;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkageSecondaryFooterViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkageSecondaryHeaderViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkageSecondaryViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.bean.BaseGroupedItem;
-import per.chen.listrecyclerlinkageview.linkage.contract.ILinkageSecondaryAdapterConfig;
+import per.chen.recyclerview.R;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkageSecondaryFooterViewHolder;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkageSecondaryHeaderViewHolder;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkageSecondaryViewHolder;
+import per.chen.recyclerview.linkage.bean.BaseGroupedItem;
+import per.chen.recyclerview.linkage.contract.ILinkageSecondaryAdapterConfig;
 
 /**
  * Create by KunMinX at 19/4/29

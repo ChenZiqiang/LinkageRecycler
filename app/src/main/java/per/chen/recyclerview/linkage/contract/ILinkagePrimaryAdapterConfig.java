@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.contract;
+package per.chen.recyclerview.linkage.contract;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -19,7 +19,7 @@ package per.chen.listrecyclerlinkageview.linkage.contract;
 import android.content.Context;
 import android.view.View;
 
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
 
 
 /**

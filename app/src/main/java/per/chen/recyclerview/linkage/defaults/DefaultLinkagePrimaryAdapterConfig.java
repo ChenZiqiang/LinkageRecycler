@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.defaults;
+package per.chen.recyclerview.linkage.defaults;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -23,9 +23,9 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import per.chen.listrecyclerlinkageview.R;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.contract.ILinkagePrimaryAdapterConfig;
+import per.chen.recyclerview.R;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
+import per.chen.recyclerview.linkage.contract.ILinkagePrimaryAdapterConfig;
 
 /**
  * Create by KunMinX at 19/5/8

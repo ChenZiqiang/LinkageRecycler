@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.contract;
+package per.chen.recyclerview.linkage.contract;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
@@ -18,10 +18,10 @@ package per.chen.listrecyclerlinkageview.linkage.contract;
 
 import android.content.Context;
 
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkageSecondaryFooterViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkageSecondaryHeaderViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.adapter.viewholder.LinkageSecondaryViewHolder;
-import per.chen.listrecyclerlinkageview.linkage.bean.BaseGroupedItem;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkageSecondaryFooterViewHolder;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkageSecondaryHeaderViewHolder;
+import per.chen.recyclerview.linkage.adapter.viewholder.LinkageSecondaryViewHolder;
+import per.chen.recyclerview.linkage.bean.BaseGroupedItem;
 
 
 /**

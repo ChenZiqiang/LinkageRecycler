@@ -1,4 +1,4 @@
-package per.chen.listrecyclerlinkageview.linkage.manager;
+package per.chen.recyclerview.linkage.manager;
 /*
  * Copyright (c) 2018-2019. KunMinX
  *
