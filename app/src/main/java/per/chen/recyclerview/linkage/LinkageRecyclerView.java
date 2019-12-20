@@ -332,4 +332,10 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
         return mHeaderPositions;
     }
 
+    public void setLeftWidth(int width) {
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mRvPrimary.getLayoutParams();
+        params.width = dpToPx(getContext(), width);
+        mRvPrimary.setLayoutParams(params);
+    }
+
 }
