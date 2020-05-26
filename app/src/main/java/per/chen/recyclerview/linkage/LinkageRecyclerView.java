@@ -296,16 +296,36 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
         }
     }
 
+    /**
+     *
+     * @param isShow 是否显示点击动画效果
+     */
+    public void setClickAnimShow(boolean isShow) {
+        RecyclerViewScrollHelper.setIsShowAnim(isShow);
+    }
+
+    /**
+     * 设置左边控件宽度
+     * @param dp
+     */
     public void setLayoutHeight(float dp) {
         ViewGroup.LayoutParams lp = mLinkageLayout.getLayoutParams();
         lp.height = dpToPx(getContext(), dp);
         mLinkageLayout.setLayoutParams(lp);
     }
 
+    /**
+     * 判断是否为Grid布局
+     * @return
+     */
     public boolean isGridMode() {
         return mSecondaryAdapter.isGridMode();
     }
 
+    /**
+     * 设置是否为 Grid布局
+     * @param isGridMode
+     */
     public void setGridMode(boolean isGridMode) {
         mSecondaryAdapter.setGridMode(isGridMode);
         setLevel2LayoutManager();

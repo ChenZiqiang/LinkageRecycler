@@ -27,6 +27,8 @@ import android.support.v7.widget.RecyclerView;
  */
 public class RecyclerViewScrollHelper {
 
+    private static boolean isShowAnim = false;
+
     public static void smoothScrollToPosition(RecyclerView recyclerView, int snapMode, int position) {
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
         if (layoutManager instanceof LinearLayoutManager) {
@@ -40,8 +42,16 @@ public class RecyclerViewScrollHelper {
                 mScroller = new LinearSmoothScroller(recyclerView.getContext());
             }
             mScroller.setTargetPosition(position);
-            manager.startSmoothScroll(mScroller);
+            if (isShowAnim) {
+                manager.startSmoothScroll(mScroller);
+            }else {
+                manager.scrollToPosition(position);
+            }
         }
+    }
+
+    public static void setIsShowAnim(boolean isShowAnim) {
+        RecyclerViewScrollHelper.isShowAnim = isShowAnim;
     }
 
     public static class TopSmoothScroller extends LinearSmoothScroller {
