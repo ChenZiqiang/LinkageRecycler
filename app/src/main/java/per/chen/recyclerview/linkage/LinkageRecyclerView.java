@@ -17,12 +17,17 @@ package per.chen.recyclerview.linkage;
 
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.LinearSmoothScroller;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSmoothScroller;
+
+
+
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -33,6 +38,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -296,16 +303,10 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
         }
     }
 
-    /**
-     *
-     * @param isShow 是否显示点击动画效果
-     */
-    public void setClickAnimShow(boolean isShow) {
-        RecyclerViewScrollHelper.setIsShowAnim(isShow);
-    }
 
     /**
      * 设置左边控件宽度
+     *
      * @param dp
      */
     public void setLayoutHeight(float dp) {
@@ -316,6 +317,7 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
 
     /**
      * 判断是否为Grid布局
+     *
      * @return
      */
     public boolean isGridMode() {
@@ -324,6 +326,7 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
 
     /**
      * 设置是否为 Grid布局
+     *
      * @param isGridMode
      */
     public void setGridMode(boolean isGridMode) {
@@ -336,6 +339,11 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
         return mScrollSmoothly;
     }
 
+    /**
+     * 是否显示点击动画效果
+     *
+     * @param scrollSmoothly
+     */
     public void setScrollSmoothly(boolean scrollSmoothly) {
         this.mScrollSmoothly = scrollSmoothly;
     }

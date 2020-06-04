@@ -16,7 +16,7 @@ package per.chen.recyclerview.linkage.adapter.viewholder;
  */
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import per.chen.recyclerview.linkage.contract.ILinkagePrimaryAdapterConfig;

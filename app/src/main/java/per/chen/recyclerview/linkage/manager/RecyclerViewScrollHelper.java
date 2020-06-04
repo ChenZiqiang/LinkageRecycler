@@ -17,9 +17,9 @@ package per.chen.recyclerview.linkage.manager;
 
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.LinearSmoothScroller;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSmoothScroller;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 /**
@@ -27,7 +27,6 @@ import android.support.v7.widget.RecyclerView;
  */
 public class RecyclerViewScrollHelper {
 
-    private static boolean isShowAnim = false;
 
     public static void smoothScrollToPosition(RecyclerView recyclerView, int snapMode, int position) {
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
@@ -42,16 +41,8 @@ public class RecyclerViewScrollHelper {
                 mScroller = new LinearSmoothScroller(recyclerView.getContext());
             }
             mScroller.setTargetPosition(position);
-            if (isShowAnim) {
-                manager.startSmoothScroll(mScroller);
-            }else {
-                manager.scrollToPosition(position);
-            }
+            manager.startSmoothScroll(mScroller);
         }
-    }
-
-    public static void setIsShowAnim(boolean isShowAnim) {
-        RecyclerViewScrollHelper.isShowAnim = isShowAnim;
     }
 
     public static class TopSmoothScroller extends LinearSmoothScroller {

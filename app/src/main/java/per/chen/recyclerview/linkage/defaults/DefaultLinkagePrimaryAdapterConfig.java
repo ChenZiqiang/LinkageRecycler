@@ -17,11 +17,10 @@ package per.chen.recyclerview.linkage.defaults;
 
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
-
 
 import per.chen.recyclerview.R;
 import per.chen.recyclerview.linkage.adapter.viewholder.LinkagePrimaryViewHolder;
