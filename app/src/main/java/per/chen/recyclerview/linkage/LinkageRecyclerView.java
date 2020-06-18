@@ -248,9 +248,12 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
     public void init(List<BaseGroupedItem<T>> linkageItems,
                      ILinkagePrimaryAdapterConfig primaryAdapterConfig,
                      ILinkageSecondaryAdapterConfig secondaryAdapterConfig) {
-
         initRecyclerView(primaryAdapterConfig, secondaryAdapterConfig);
+        refreshData(linkageItems);
+        initLinkageSecondary();
+    }
 
+    public void refreshData(List<BaseGroupedItem<T>> linkageItems) {
         this.mInitItems = linkageItems;
 
         String lastGroupName = null;
@@ -279,7 +282,6 @@ public class LinkageRecyclerView<T extends BaseGroupedItem.ItemInfo> extends Rel
         this.mInitGroupNames = groupNames;
         mPrimaryAdapter.initData(mInitGroupNames);
         mSecondaryAdapter.initData(mInitItems);
-        initLinkageSecondary();
     }
 
     public void init(List<BaseGroupedItem<T>> linkageItems) {
